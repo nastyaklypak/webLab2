@@ -183,7 +183,7 @@ window.addEventListener("load", () => {
     const declineBtn = document.getElementById("decline-btn");
     const thankYouMessage = document.getElementById("thank-you-message");
 
-    if (!localStorage.getItem("subscribed")) {
+    if (!sessionStorage.getItem("subscribed")) {
         setTimeout(() => {
             subscriptionModal.classList.add("show"); 
            
@@ -191,7 +191,7 @@ window.addEventListener("load", () => {
     }
 
     acceptBtn.addEventListener("click", () => {
-        localStorage.setItem("subscribed", "true");
+        sessionStorage.setItem("subscribed", "true");
         subscriptionModal.classList.remove("show"); 
         showThankYouMessage();
     });
