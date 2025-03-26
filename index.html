@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div id="header"></div>
+ 
+    <div class="dropdown">
+       <div class="select">
+        <span class="selected">All</span>
+        <div class="caret"></div>
+       </div>
+       <ul class="menu">
+        <li class="active">All</li>
+       </ul>
+    </div>    
+
+    <div id="products"></div>
+    
+    <!-- Added Load More button -->
+    <button class="btn-more">Load More</button>
+
+    <div id="subscription-modal" class="subscription-modal">
+        <div class="subscription-content">
+            <p>Підпишіться на повідомлення з нашого сайту!</p>
+            <button id="accept-btn">Прийняти</button>
+            <button id="decline-btn">Відхилити</button>
+        </div>
+    </div>
+    
+    <div id="thank-you-message" class="thank-you-message hidden">
+        <p>Дякуємо за підписку!</p>
+    </div>
+    
+      
+      <div id="advertisement">
+        <span>Це рекламне повідомлення.</span>
+        <button id="close-btn">Закрити</button>
+        <span id="timer">10</span>
+    </div>
+    
+    <div id="shopping"></div>
+
+    <script src = "../lab2/constans/catalog.js"></script>
+    <script src = "../lab2/constans/root.js"></script>
+
+    <!-- Header -->
+    <script src = "../lab2/header/header.js"></script>
+    <link rel="stylesheet" href="../lab2/header/header.css">
+
+    <!-- Products -->
+    <script src = "../lab2/products/products.js"></script>
+    <link rel="stylesheet" href="../lab2/products/products.css">
+
+    
+</body>
+</html>
